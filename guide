@@ -1,0 +1,10 @@
+// 1. Install Geth: First, make sure you have Geth installed on your system. You can download it from the official Geth repository: https://github.com/ethereum/go-ethereum
+
+// 2. Run the Goerli node: Open a terminal and execute the following command:
+geth --goerli --syncmode "fast"
+// 3. Wait for synchronization
+geth attach
+eth.syncing
+// If it returns false, the node is fully synchronized and ready for use.
+
+// That's it! You now have a Goerli testnet node running using Geth. You can interact with the node by using the Geth console or by connecting to it via RPC/API endpoints for development purposes.
